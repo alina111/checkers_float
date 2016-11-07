@@ -1,0 +1,68 @@
+.wrapper {
+	width: 820px;
+	height: 820px;
+	background-color: #e6cbae;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.desk {
+	width: 101%;
+	height: 101%;
+	background-color: #0F0A05;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 1px solid #0f0a05;
+}
+.desk > div {
+	height: 12.5%;
+}
+.desk > div > div {
+	float: left;
+	width: 12.5%;
+	height: 100%;
+	position: relative;
+
+}
+
+.desk > div:nth-child(odd) div:nth-child(even),
+.desk > div:nth-child(even) div:nth-child(odd) {
+	background-color: #e6cbae;
+}
+.desk > div:nth-child(1) div:nth-child(odd):before,
+.desk > div:nth-child(2) div:nth-child(even):before,
+.desk > div:nth-child(3) div:nth-child(odd):before  {
+	margin: 5%;
+ 	position: absolute;
+	content: '';
+	width: 80%;
+	height: 80%;
+	display: block;
+	border-radius: 50%;
+	background-color: brown;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+.desk > div:nth-child(6) div:nth-child(odd):before,
+.desk > div:nth-child(7) div:nth-child(even):before,
+.desk > div:nth-child(8) div:nth-child(odd):before
+ {
+ 	position: absolute;
+	content: '';
+	width: 80%;
+	height: 80%;
+	display: block;
+	border-radius: 50%;
+	background-color: red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
